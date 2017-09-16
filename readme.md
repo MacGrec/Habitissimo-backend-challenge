@@ -23,7 +23,7 @@ After download the project you must configure your environment
 </VirtualHost>
 ```
 
-- **Update your host file** located in C:\Windows\System32\drivers\etc with the follow lines
+- **Update your host file** located in ```C:\Windows\System32\drivers\etc``` with the follow lines
 ```
 # localhost name resolution is handled within DNS itself.
 #	127.0.0.1       localhost
@@ -31,7 +31,23 @@ After download the project you must configure your environment
 
 127.0.0.1	laravel.dev
 ```
-- Open a Windows terminal and write the command: ``` C:\xampp\htdocs\{project-name}>php artisan migrate```
+
+- Execute your Xampp and start Apache and MySql from Xampp control panel 
+
+- Access to ```http://localhost/phpmyadmin``` and create a database 
+
+- Edit the file ```C:\xampp\htdocs\{project-name}\.env``` whith that info
+
+```
+ DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE={database-name}
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+- Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>php artisan migrate```
 
 ## API Calls
 
