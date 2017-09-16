@@ -61,7 +61,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** reqbudget
 - **Method:** POST
 - **Required parameters:** description, email, telephone, address
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
 - **Example call:** http://laravel.dev/api/reqbudget
 - **Example of json payload:** 
 ```
@@ -96,7 +96,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** reqbudget/$id
 - **Method:** PUT
 - **Required parameters:** none
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example of json payload:**
 ```
@@ -129,7 +129,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** pubbudget/$id
 - **Method:** PUT
 - **Required parameters:** none
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
 - **Example call:** http://laravel.dev/api/pubbudget/8
 - **Example success response:**
 ```
@@ -154,7 +154,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** reqbudget
 - **Method:** GET
 - **Required parameters:** none
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
 - **Example call:** http://laravel.dev/api/reqbudget
 - **Example of json payload:**
 ```
@@ -214,7 +214,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** suggcategory/$id
 - **Method:** GET
 - **Required parameters:** none
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\CategoryController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\CategoryController.php``` 
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example success response:**
 ```
@@ -239,7 +239,7 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Call:** reqbudget/$id
 - **Method:** DELETE
 - **Required parameters:** none
-- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController``` 
+- **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example success response:**
 ```
