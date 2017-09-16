@@ -31,7 +31,7 @@ After download the project you must configure your environment
 
 127.0.0.1	laravel.dev
 ```
-- Open a Windows terminal and write the command: ``` C:\xampp\htdocs\{project-name}>**php artisan migrate**```
+- Open a Windows terminal and write the command: ``` C:\xampp\htdocs\{project-name}>php artisan migrate```
 
 ## API Calls
 
@@ -44,7 +44,7 @@ After download the project you must configure your environment
 - **Required parameters:** description, email, telephone, address
 - **Example call:** http://laravel.dev/api/reqbudget
 - **Example of json payload:** 
-
+```
     {
     	"name" : "Mr. Habitissimo",
     	"description" : "I need some stuff",
@@ -52,25 +52,25 @@ After download the project you must configure your environment
         "telephone" : "654426262" ,
         "address" :"Calle secret"
     }
-
+```
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": {
 	        "id": 95
 	    }
 	}
-	
+```
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
-
+```
 ### **Update a budget request**
 
 - **Call:** reqbudget/$id
@@ -78,30 +78,31 @@ After download the project you must configure your environment
 - **Required parameters:** none
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example of json payload:**
-
+```
     {
     	"title" : "Mr. Habitissimo",
     	"description" : "I need some stuff",
         "category_id": 2
     }
+ ```
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": {
 	        "id": 5
 	    }
 	}
-	
+```	
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
-
+```
 ### **Publish a budget request**
 
 - **Call:** pubbudget/$id
@@ -109,23 +110,23 @@ After download the project you must configure your environment
 - **Required parameters:** none
 - **Example call:** http://laravel.dev/api/pubbudget/8
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": {
 	        "id": 8
 	    }
 	}
-
+```
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
-
+```
 ### **Get the list of budget requests**
 
 - **Call:** reqbudget
@@ -133,12 +134,13 @@ After download the project you must configure your environment
 - **Required parameters:** none
 - **Example call:** http://laravel.dev/api/reqbudget
 - **Example of json payload:**
-
+```
     {
     	"email" : "user@mail.com"
     }
+```
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": [
@@ -174,15 +176,16 @@ After download the project you must configure your environment
 	        }
     	]
 	}
+```
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
-
+```
 ### **Get a suggest of category for a budget requests without category**
 
 - **Call:** suggcategory/$id
@@ -190,22 +193,23 @@ After download the project you must configure your environment
 - **Required parameters:** none
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": {
 	        "Reforms Bathrooms": 3
 	    }
 	}
+```
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
-
+```
 ### **Discard a budget request**
 
 - **Call:** reqbudget/$id
@@ -213,31 +217,36 @@ After download the project you must configure your environment
 - **Required parameters:** none
 - **Example call:** http://laravel.dev/api/reqbudget/5
 - **Example success response:**
-
+```
 	{
 	    "success": true,
 	    "data": {
 	        "id": 5
     	}
 	}
+```
 - **Example not success response:**
-
+```
 	{
 	    "success": false,
 	    "error_code": 102,
 	    "error_message": "Info error"	        
 	    
 	}
+```
 
 ## Expected errors
 
 - **101** with HTTP code 200
+```
 	{
 	    "success": false,
 	    "error_code": 101,
 	    "error_message": "Budget Request not found"
 	}
+```
 - **102** with HTTP code 200
+```
 	{
 	    "success": false,
 	    "error_code": 102,
@@ -247,53 +256,68 @@ After download the project you must configure your environment
 	        ]
 	    }
 	}
+```
 - **103** with HTTP code 200
+```
 	{
 		success: false,
 		error_code: 103,
 		error_message: "The state is not correct"
 	}
+```
 - **104** with HTTP code 200
+```
 	{
 		success: false,
 		error_code: 104,
 		error_message: "Problem updating/creating user"
 	}
+```
 - **105** with HTTP code 200
+```
 	{
 		success: false,
 		error_code: 105,
 		error_message: "Problem updating/creating the budget requests"
 	}
+```
 - **106** with HTTP code 200
+```
 	{
 		success: false,
 		error_code: 106,
 		error_message: "The budget request is not complete"
 	}
+```
 - **107** with HTTP code 200
+```
 	{
 		success: false,
 		error_code: 107,
 		error_message: "Saving data process has been wrong"
 	}
+```
 - **666** with HTTP code 405
+```
 	{
 	    "success": false,
 	    "error_code": 666,
 	    "error_message": "Method Not Allowed HttpException"
 	}
+```
 - *0* with HTTP code 404
+```
 	{
 	success: false,
 	error_code: 0,
 	error_message: "Not Found HttpException"
 	}
+```
 
 
 ## Test battery
 
-Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>**vendor\bin\phpunit**```
+Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>vendor\bin\phpunit```
 
 
 
