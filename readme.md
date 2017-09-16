@@ -1,6 +1,6 @@
 <p align="center"><img src="https://es.habcdn.com/static/img/habitissimo-2013.png"></p>
 
-## Installation in Windows
+## Install Laravel 5.5 in Windows
 
 - Install Xampp **[Composer](https://www.apachefriends.org/)** 
 - Install **[Composer](https://getcomposer.org/download/)** 
