@@ -11,6 +11,7 @@
 After download the project you must configure your environment
 
  - **Add the follow lines** at httpd-vhosts.conf located in C:\xampp\apache\conf\extra\httpd-vhosts.conf 
+```
 <VirtualHost laravel.dev:80>
   DocumentRoot "C:\xampp\htdocs\{project-name}\public"
   ServerAdmin laravel.dev
@@ -20,11 +21,17 @@ After download the project you must configure your environment
         Require all granted
   </Directory>
 </VirtualHost>
+```
 
 - **Update your host file** located in C:\Windows\System32\drivers\etc with the follow lines
+```
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
 
 127.0.0.1	laravel.dev
-
+```
+- Open a Windows terminal and write the command: ``` C:\xampp\htdocs\{project-name}>**php artisan migrate**```
 
 ## API Calls
 
@@ -286,7 +293,7 @@ After download the project you must configure your environment
 
 ## Test battery
 
-Open a Windows terminal and write the command: C:\xampp\htdocs\{project-name}> **vendor\bin\phpunit**
+Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>**vendor\bin\phpunit**```
 
 
 
