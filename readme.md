@@ -47,7 +47,8 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-- Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>php artisan migrate```
+- Open a Windows terminal and write the command: ```C:\xampp\htdocs\{project-name}>php artisan migrate``` for ejecute the create tables and alternate tables commands from the files located at ```C:\xampp\htdocs\{project-name}\database\migrations```
+
 
 ## API Calls
 
