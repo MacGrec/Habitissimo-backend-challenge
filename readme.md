@@ -155,12 +155,9 @@ You can find all the api routes at the file  ```C:\xampp\htdocs\{project-name}\r
 - **Method:** GET
 - **Required parameters:** none
 - **Handled by:** ```C:\xampp\htdocs\{project-name}\app\Http\Controllers\ReqBudgetController.php``` 
-- **Example call:** http://laravel.dev/api/reqbudget
+- **Example call:** http://laravel.dev/api/reqbudget?email=user@mail.com"
 - **Example of json payload:**
 ```
-    {
-    	"email" : "user@mail.com"
-    }
 ```
 - **Example success response:**
 ```
